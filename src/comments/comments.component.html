@@ -1,0 +1,28 @@
+<h3>Comments</h3>
+<hr>
+<div class="flex-container" *ngFor="let user of userComments; let i=index;">
+    <div class="authorImage" [ngStyle]="{'background':'url(' + user.authorImage + ')'}"></div>
+    <div class="authorBody">
+        <span class="userName">{{user.authorName}}</span>
+        <span class="date">{{user.time}}</span>
+        <div class="comments">{{user.comments}}</div>
+        <span class="reply" (click)="toggleReply(i)">Reply</span>
+            <div class="replies" *ngFor="let item of user.replies; let i = index;">
+                <div class="authorImage" [ngStyle]="{'background':'url(' + item.authorImage + ')'}"></div>
+                <div class="authorBody">
+                    <span class="userName">{{item.authorName}}</span>
+                    <span class="date">{{item.time}}</span>
+                    <div class="comments">{{item.comments}}</div>
+                    <span class="reply" (click)="toggleReply(i)">Reply</span>                                   
+                </div>
+            </div>
+        <form *ngIf="toggle[i]" [formGroup]="comments">
+            <textarea formControlName="textarea" matInput placeholder=""></textarea>
+            <button mat-raised-button color="primary" (click)="addReply(user, i)">Add Reply</button>
+        </form>
+    </div>
+</div>
+<form [formGroup]="comments">
+    <textarea formControlName="textarea" matInput placeholder=""></textarea>
+    <button mat-raised-button color="primary" (click)="addComments()">Add Reply</button>
+</form>

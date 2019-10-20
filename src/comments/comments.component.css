@@ -1,0 +1,54 @@
+h3{
+    font-family: Helvetica, sans-serif
+}
+hr{
+    border-color: white;
+}
+textarea {
+    border: 1px solid gainsboro;
+    height: 150px;
+    width: 100%;
+    padding: 10px;
+}
+.flex-container {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.flex-container .authorBody{
+  font-size: 14px;
+  padding-left: 10px;
+}
+.authorBody {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.authorImage{
+    height: 40px;
+    width: 41px;
+    background-size:cover !important; 
+}
+
+.authorBody .userName{
+    font-weight: bold;
+    font-size: 16px;
+    padding-right: 7px;
+}
+.comments{
+    padding: 5px 0px;
+    font-family: Helvetica, Arial, sans-serif
+}
+.reply{
+    font-size: 12px;
+    color: #cecece;
+    padding-top: 3px;
+    cursor: pointer;
+}
+.date{
+    font-size: 12px;
+}
+.authorBody textarea{
+    height: 100px;
+}
+.replies{
+    display:flex;
+}

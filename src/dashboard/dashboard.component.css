@@ -1,0 +1,22 @@
+.username{
+    color:red;
+    font-weight: bold;
+}
+mat-card-title.mat-card-title{
+    display: inline-block;
+}
+mat-card-title.mat-card-title:last-child{
+    float: right;
+}
+.logout{
+    float: right;
+    position: relative;
+    top: -22px;
+    right: 18px;
+    clear: both;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.logout:hover{
+    color:red;
+}

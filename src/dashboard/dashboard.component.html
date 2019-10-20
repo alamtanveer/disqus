@@ -1,0 +1,14 @@
+
+<mat-card>
+    <mat-card-title>
+        Disqus
+    </mat-card-title>
+    <mat-card-title>
+        Welcome <span class="username">{{userName.username}}!</span>
+    </mat-card-title>
+</mat-card>
+        <span class="logout" [routerLink] = "['/login']">
+            LogOut
+        </span>
+<comments [currentUser]="userName"></comments>
+
