@@ -1,0 +1,20 @@
+[
+    {
+        "id" : "100",
+        "username": "Tanveer",
+        "password": "Tanveer123",
+        "imagePath": "./assets/pic1.png"
+    },
+    {
+        "id": "101",
+        "username": "scott",
+        "password": "123",
+        "imagePath": "./assets/pic2.png"
+    },
+    {
+        "id": "102",
+        "username": "Alexa",
+        "password": "123",
+        "imagePath": "./assets/pic3.png"
+    }
+]
